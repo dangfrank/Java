@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Class Marksheet</h1>
+        <form id="myForm" class="row">
+            <div class="form-group col-12 row">
+                <label for="name" class="label-group col-4">Họ tên</label>
+                <input type="text" name="name" id="name" class="text-group col-8" required>     
+            </div>
+            <div class="form-group col-12 row">
+                <label for="math" class="label-group col-4">Điểm toán</label>
+                <input type="number" id="math" class="text-group col-8"  required>
+            </div>
+            <div class="form-group col-12 row">
+                <label for="physical" class="label-group col-4">Điểm lý</label>
+                <input type="number" id="physical" class="text-group col-8"  required>
+            </div>
+            <div class="form-group col-12 row">
+                <label for="chemistry" class="label-group col-4">Điểm hóa</label>
+                <input type="number" id="chemistry" class="text-group col-8"  required>
+            </div>
+            <div class="col-12">
+                <button type="submit" id="enter" class="btn btn-primary" >Nhập</button>
+
+            </div>
+           
+        </form>
+        <div class="input-group col-6">
+            <input type="text" id="mySearch" class="form-control" placeholder="search">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+
+        </div> 
+        <div class="row">
+            <table class="col-12">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Toán</th>
+                        <th>Lý</th>
+                        <th>Hóa</th>
+                        <th>Trung bình</th>
+                        <th>Tùy chỉnh</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="btn-group">
+            <button id="calc" class="btn btn-success">Tính điểm trung bình</button>
+            <button id="excellent" class="btn btn-warning">Xét học sinh giỏi</button>
+        </div>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
